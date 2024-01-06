@@ -19,3 +19,24 @@ console.log("Enrolled:",student);
 document.getElementById("p1").innerHTML = "Hello "+firstName;
 document.getElementById("p2").innerHTML = "You are "+age+" years old";
 document.getElementById("p3").innerHTML = "Enrolled: "+student;
+
+//3. ARITHMETIC EXPRESSIONS
+
+let students = 20;
+students += 1;
+//students -= 1; augumented assignment operator
+//students *= 2;
+//students /= 2;
+
+let extra = students%3;
+
+console.log(students);
+console.log(extra);
+
+//PRECEDENCE
+/*
+()
+^
+* /
++ -
+*/
