@@ -16,9 +16,9 @@ console.log("Hey",firstName);
 console.log("You are",age,"years old");
 console.log("Enrolled:",student);
 
-document.getElementById("p1").innerHTML = "Hello "+firstName;
-document.getElementById("p2").innerHTML = "You are "+age+" years old";
-document.getElementById("p3").innerHTML = "Enrolled: "+student;
+// document.getElementById("p1").innerHTML = "Hello "+firstName;
+// document.getElementById("p2").innerHTML = "You are "+age+" years old";
+// document.getElementById("p3").innerHTML = "Enrolled: "+student;
 
 //3. ARITHMETIC EXPRESSIONS
 
@@ -28,10 +28,10 @@ students += 1;
 //students *= 2;
 //students /= 2;
 
-let extra = students%3;
+// let extra = students%3;
 
-console.log(students);
-console.log(extra);
+// console.log(students);
+// console.log(extra);
 
 //PRECEDENCE
 /*
@@ -40,3 +40,14 @@ console.log(extra);
 * /
 + -
 */
+
+//4. user input
+// let userName = window.prompt("Whats your name?");
+// console.log(userName);
+
+let userName;
+document.getElementById("myButton").onclick = function(){
+    userName = document.getElementById("myText").value;
+    console.log(userName);
+    document.getElementById("myLabel").innerHTML = "Hello "+userName;
+}
